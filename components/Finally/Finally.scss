@@ -1,0 +1,62 @@
+@import '../Calculator.scss';
+$borderColor: rgb(161, 159, 159);
+$headerColor: #95A5A6;
+
+.finallyComp{
+    .finallyTable{
+        text-align: center;
+        margin: 0 auto; 
+        border-spacing: 0px 10px;
+        border-collapse: separate;
+        td{
+            vertical-align: middle;
+            padding: 10px;
+            font-size: 13px;
+            color: black;
+            border-bottom: 2px solid $borderColor;
+            border-top: 2px solid $borderColor;
+            // border-radius: 3px;
+            &:nth-child(odd){
+                width: 70%;
+                border-left: 2px solid $borderColor;
+            }
+            &:nth-child(even){
+                width: 30%;
+                border-right: 2px solid $borderColor;
+                font-weight: 700;
+            }
+        }
+        tr{
+            background: white;
+            cursor: pointer;
+            box-shadow: 0px 0px 9px 1px $borderColor;
+            &:hover{
+                background: $borderColor;
+            }
+            &:nth-child(odd){
+                // background: rgb(235, 225, 225);
+            }
+        }
+        .tableHeader{
+            color: black;
+            background: $headerColor;
+            border: 2px solid $headerColor;
+            box-shadow: none;
+            font-size: 14px;
+            font-weight: 700;
+            padding: 15px 0;
+            border-radius: none;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            cursor: default;
+        }
+    }
+    .finallySum{
+        font-size: $font-Size + 0.4;
+        margin: 6vh;
+        a{
+            color: green
+        }
+    }
+ 
+}

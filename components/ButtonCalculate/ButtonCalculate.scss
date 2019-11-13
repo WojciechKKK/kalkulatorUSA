@@ -1,0 +1,21 @@
+$btnColor: rgb(51,51,51);
+
+.buttonCalculateComp{
+    margin: 3vh 0;
+    .btnShow, .btnDetails{
+        // width: $widthInputOption + 20;
+        background: $btnColor;
+        border: 1px solid $btnColor;
+        color: white;
+        padding: 10px 30px;
+        border-radius: 10px;
+        margin: 0 1vw;
+        box-shadow: 0px 0px 10px $btnColor;
+        &:hover{
+            cursor: pointer;
+            color: $btnColor;
+            background: white; 
+            border: 1px solid white;
+        }
+    }
+}

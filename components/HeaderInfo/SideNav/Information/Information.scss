@@ -1,0 +1,29 @@
+@import '../SideNav.scss';
+
+.informationComp{
+    @include elementListText;
+    .informationList{
+        text-align: center;
+        .infoEl{
+            padding: 0.5rem 0;
+            margin: 0;
+            font-size: 1rem;
+            &:hover{
+                color: #818181;
+                cursor: default;
+            }
+        }
+        // .installDevice{
+        //     padding: 0.5rem 0;
+        //     .installDeviceEl{
+        //         padding: 5px 10px;
+        //         margin: 0;
+        //         font-size: 0.8rem;
+        //         &:hover{
+        //             color: #818181;
+        //             cursor: default;
+        //         }
+        //     }
+        // }
+    }
+}

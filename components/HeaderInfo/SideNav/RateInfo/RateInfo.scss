@@ -1,0 +1,31 @@
+@import './../../../Calculator.scss';
+@import '../SideNav.scss';
+
+.rateInfoComp{
+    padding-top: 3vh;
+    width: 100%;
+    font-size: $font-Size - 0.2;
+    text-align: center;
+    @include elementListText;
+    .rateInfo{
+        margin-right: 20px;
+        .fas{
+            color: #818181;
+            margin-right: 5px;
+            font-size: $font-Size + 0.5;
+            &:hover{
+            cursor: default;     
+            }
+        }
+        .rateValue{
+            font-size: $font-Size;
+            color: red;
+            font-weight: 700;
+            margin-left: 10px;
+            &:hover{
+                cursor: default;     
+                }
+        }
+    }
+    
+}

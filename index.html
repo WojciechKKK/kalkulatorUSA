@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,	initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+    <title>Kalkulator</title>
+    <meta name="description" content="Kalkulator USA"> 
+    <meta name="keywords" content="kalkulator usa"> 
+    <meta http-equiv="author" content="Wojciech Kmieć">
+    <meta name="apple-mobile-web-app-status-bar" content="#95A5A6">
+    <meta name="theme-color" content="#95A5A6"/>
+    <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon" />
+    <link rel="manifest" href="./manifest.json"/>
+    <link rel="apple-touch-icon" href="./image/am-logo.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <script>
+        const PATH = './service-worker.js';
+        
+        let isServiceWorkersSupport = ('serviceWorker' in navigator);
+        
+        if (isServiceWorkersSupport) {
+            console.log('Will service worker register?');
+            navigator.serviceWorker.register(PATH).then(function () {
+                console.log("Yes it did.");
+            }).catch(function (err) {
+                console.log("No it didn't. This happened: ", err)
+            });
+        }
+        </script>
+
+</head>
+<body>
+    <div id="app"></div>
+    <p>.</p>
+    <!-- <script type="text/javascript" src="out.js"></script> -->
+<script type="text/javascript" src="out.js"></script></body>
+</html>
+

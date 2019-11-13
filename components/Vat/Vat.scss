@@ -1,0 +1,40 @@
+@import '../Calculator.scss';
+
+// .vatComp{
+//     .vatChoose{
+//         padding-top: $paddingTopSection;
+//         .vatChoose_text{
+//             padding: $paddingInputOption;
+//             display: inline-block;
+//             width: $widthText - 10;
+//             text-align: left;
+//         }
+//         .vatChoose_option{
+//             width: $widthInputOption;
+//             @include optionStyle;
+//             option{
+//                 font-size: $font-Size;
+//             }
+//         }
+//     }
+// }
+
+
+.vatComp{
+    padding-top: $paddingTopSection;
+    text-align: center;
+    margin: 0 auto;
+    .vatChoose{
+        width: $widthInputOption;
+        position: relative;
+        text-align: center;
+        margin: 0 auto;
+        &:after{
+            @include divAfterElements
+        }
+        select{
+            @include divSelect;
+
+        }
+    }
+}

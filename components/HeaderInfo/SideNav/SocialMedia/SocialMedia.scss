@@ -1,0 +1,24 @@
+@import './../../../Calculator.scss';
+
+.socialMediaComp{
+    position: absolute;
+    width: 100%;
+    bottom: 10vh;
+    text-align: center;
+    margin: 0 auto;
+    .socialList{
+        .socialEl{
+            display: inline-block;
+            margin: 0;
+            padding: 15px;
+            .social_icon{
+                color: #818181;
+                font-size: $font-Size + 0.6;
+                &:hover{
+                    color: red
+                }
+            }
+        }
+
+    }
+}

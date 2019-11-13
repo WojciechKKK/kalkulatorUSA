@@ -1,0 +1,86 @@
+// $fontFamily:  Arial, Helvetica, sans-serif;
+$fontFamily:  'lato', sans-serif;
+$font-Size: 1.1rem;
+$heightInputOption: 7vh;
+$widthInputOption: 70%;
+$widthText: 40%;
+$paddingInputOption: 1vh 0;
+$paddingTopSection: 1vh;
+
+@mixin optionStyle{
+    background: white;
+    border: 1px solid black;
+    display: inline-block;
+    height: $heightInputOption;
+}
+
+//for 'aukcja' , 'transport' , 'odprawa' elements: '<' & '>'
+@mixin divAfterElements{
+    content: '<>';
+    font: 17px "Consolas", monospace;
+    color: #333;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    right: 11px;
+    top: 12px;
+    padding: 0 0 2px;
+    border-bottom: 1px solid #999;
+    position: absolute;
+    pointer-events: none;
+
+}
+//for SELECT 'aukcja' , 'transport' , 'odprawa' 
+@mixin divSelect{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: block;
+    width: 100%;
+    // max-width: 320px;
+    height: 50px;
+    // float: right;
+    margin: 5px 0px;
+    padding: 0px 24px;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #333;
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #cccccc;
+    -ms-word-break: normal;
+    word-break: normal;
+    border-radius: 10px;
+
+    &::-ms-expand {
+        display: none;
+        }
+        
+        &:focus{
+            border: 1px solid black;
+      
+        }
+        &:hover{
+            border: 1px solid black;
+      
+        }
+}
+body{
+    font-family: $fontFamily;
+    background: rgb(245, 239, 239);
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.calculatorContainer{
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: $font-Size;
+    padding-top: 10vh;
+}
+
+

@@ -1,0 +1,8 @@
+@import '../SideNav.scss';
+
+.installText{
+    @include elementListText;
+    .installTextEl{
+        padding: 10px 0;
+    }
+}

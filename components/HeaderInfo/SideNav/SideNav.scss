@@ -1,0 +1,50 @@
+@import '../../Calculator.scss';
+
+@mixin elementListText{
+    padding: 4vh 2vh;
+    color: #818181;
+    font-size: $font-Size;
+}
+
+.headerInfoDropdown{
+    text-align: center;
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        li {
+            padding: 10px 32px;
+            text-decoration: none;
+            font-size: $font-Size + 0.3;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+            &:hover{
+                color: #f1f1f1;
+            }
+            a:hover{
+              cursor: pointer;
+            }
+          }
+
+      }
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 5px;
+        font-size: 36px;
+        margin-left: 50px;
+        cursor: pointer;
+      }
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav li {font-size: 18px;}
+      }
+}

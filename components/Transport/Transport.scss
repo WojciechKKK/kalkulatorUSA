@@ -1,0 +1,21 @@
+@import '../Calculator.scss';
+
+.transportComp{
+    padding-top: $paddingTopSection;
+    text-align: center;
+    margin: 0 auto;
+    .transportChoose{
+        width: $widthInputOption;
+        position: relative;
+        text-align: center;
+        margin: 0 auto;
+        &:after{
+            @include divAfterElements
+        }
+        select{
+            @include divSelect
+        }
+    }
+}
+
+
