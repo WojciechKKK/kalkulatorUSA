@@ -1,4 +1,4 @@
-## kalkulatorUSA - Progressive Web App
+## kalkulatorUSA - Progressive Web App - for Mobile
 
 #### Table of contents
 * [General info](#general-info)
