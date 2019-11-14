@@ -13,6 +13,7 @@ Project is created with:
 * React
 * ES6
 * Webpack
+* Sass
 * PWA
 	
 
